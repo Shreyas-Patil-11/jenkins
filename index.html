@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Jane Dev</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Front-end Developer</h2>
+      <p>Building clean, responsive web experiences. Welcome to my portfolio.</p>
+      <a class="cta" href="about.html">Learn more →</a>
+    </section>
+
+    <section class="projects">
+      <h3>Selected Projects</h3>
+      <ul>
+        <li><strong>Project A</strong> — A responsive app demo</li>
+        <li><strong>Project B</strong> — CSS-first landing page</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Jane Dev — <a href="mailto:jane@example.com">jane@example.com</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

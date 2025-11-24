@@ -1,0 +1,51 @@
+:root {
+  --bg: #f7f7fb;
+  --accent: #0b6cff;
+  --text: #222;
+  --muted: #666;
+  --card: #fff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+.container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+
+.site-header {
+  background: linear-gradient(90deg, rgba(11,108,255,0.1), transparent);
+  padding: 1rem;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header h1 { font-size: 1.25rem; }
+.site-header nav a { margin-left: 1rem; text-decoration: none; color: var(--accent); }
+
+.hero {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(20,20,50,0.04);
+  margin-bottom: 1.25rem;
+}
+.hero h2 { margin-bottom: 0.5rem; }
+.hero .cta {
+  display:inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 0.9rem;
+  background: var(--accent);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.projects { background: var(--card); padding: 1rem; border-radius: 10px; }
+.site-footer {
+  margin: 2rem 0;
+  text-align:center;
+  color: var(--muted);
+}
